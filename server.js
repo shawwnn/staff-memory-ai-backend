@@ -10,6 +10,14 @@ const mongoose = require("mongoose");
 const memberRoutes = require("./routes/memberRoutes");
 
 const app = express();
+
+// const corsOptions = {
+//   origin: "*", // Allow all origins (for testing only)
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   allowedHeaders: "Content-Type, Authorization",
+// };
+// app.use(cors(corsOptions));
+
 app.use(cors());
 app.use(express.json());
 
